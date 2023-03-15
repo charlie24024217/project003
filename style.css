@@ -1,1 +1,235 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Almarai", sans-serif;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  width: 100%;
+  background-color: #e3e4de;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  height: 3rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e4de;
+  border-bottom: 1px solid #373736;
+}
+nav .aList {
+  width: 300px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+nav .aList a {
+  text-decoration: none;
+  color: #373736;
+}
+nav #logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 2rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .imgAdiv {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .itmeList {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+}
+main .divAimg {
+  margin-top: 1.2rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
+main h2 {
+  display: inline-block;
+  color: #373736;
+  font-size: 5vh;
+  font-weight: 700;
+}
+main p {
+  color: #373736;
+  display: flex;
+  align-items: end;
+  flex-grow: 1;
+  width: 300px;
+}
+main a {
+  display: inline-block;
+  padding-top: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid #373736;
+  text-decoration: none;
+  color: #373736;
+}
+main ul {
+  list-style: none;
+}
+main .bigPhoto {
+  width: 300px;
+  min-height: 50vh;
+  max-height: 100vh;
+  flex-grow: 1;
+  border-bottom: 1px solid #373736;
+}
+main .bigPhoto img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+main .middlePhoto {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 50%;
+  height: 100%;
+  flex-grow: 1;
+  border-bottom: 1px solid #373736;
+  background-color: aqua;
+}
+main .itemImg {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 66%;
+  aspect-ratio: 3/4;
+  border-radius: 50vmin;
+  background-color: blue;
+}
+main div.bigBlock {
+  width: 300px;
+  min-height: 50vh;
+  max-height: 100%;
+  padding: 2rem 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #373736;
+}
+main div.bigBlock h2 {
+  width: 340px;
+}
+main div.middleBlock {
+  min-width: 50%;
+  min-height: 40vh;
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #373736;
+}
+main div.smallBlock {
+  min-width: 25%;
+  padding: 1rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border-bottom: 1px solid #373736;
+}
+main div.itemBlock {
+  min-width: 75%;
+  min-height: 50vh;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  border-bottom: 1px solid #373736;
+}
+main div.item {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #373736;
+}
+main div.item h3 {
+  color: #373736;
+  margin: 1rem 0;
+}
+main div.item p {
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-grow: 0;
+}
+main div.item a {
+  padding-top: 8px;
+  border-bottom: none;
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  padding: 2rem;
+  min-width: 300px;
+  max-width: 700px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .bigPhoto {
+    height: 50vh;
+  }
+}
+@media (max-width: 1000px) {
+  nav .aList {
+    display: none;
+  }
+  main h2 {
+    width: 340px;
+  }
+  main .itmeList {
+    flex-direction: column;
+  }
+  main .itmeList a {
+    display: none;
+  }
+  main .divAimg {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .middlePhoto {
+    width: 100%;
+    height: 50vh;
+  }
+}/*# sourceMappingURL=style.css.map */
